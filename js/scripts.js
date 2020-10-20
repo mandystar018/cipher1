@@ -11,7 +11,8 @@ function newString(sentence){
 }
 let reverse = newString(sentence);
 
-function order(reverse) {
+function order(){
+
   const newFirst = first[0];
   const newLast = last[1];
   const together = newFirst + newLast;
