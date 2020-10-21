@@ -9,15 +9,23 @@ function newString(sentence){
   const result = first + last;
   return result;
 }
-let reverse = newString(sentence);
 
-function order(){
-
-  const newFirst = first[0];
-  const newLast = last[1];
-  const together = newFirst + newLast;
-  return together;
+function order(string){
+  return string.slice(-1) + string[0];
 }
+
+function callFunc(){
+  let b = newString(sentence);
+  let a = order(b);
+  return sentence + a;
+}
+
+  function fourth(){
+    return sentence.length().reverse();
+  }
+
 alert(newString(sentence));
-alert(order(reverse));
+alert(order(sentence));
+alert(callFunc(sentence));
+alert(fourth(sentence));
 });
